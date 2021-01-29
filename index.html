@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="survey-form" />
+    <meta name="keywords" content="survey, form" />
+    <meta name="author" content="Luka Goderdzishvili" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="main-container">
+      <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-content">Welcome to the Survey Form</h1>
+            <p id="description" class="description text-content">Thank you for taking the time to help us improve the platform</p>  
+        </header>
+        <div class="form">
+            <form id="survey-form">
+                <div class="form-items">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your name" required/>
+                </div>
+                <div class="form-items">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter your Email" required/>
+                </div>
+                <div class="form-items">
+                    <label id="number-label" for="number">Age <span class="small-txt">(optional)</span></label>
+                    <input type="number" id="number" class="form-input" placeholder="Age" min="10" max="80" required/>
+                </div>
+                <div class="form-items">
+                    <label id="select-label" for="dropdown">Which option best describes your current role?</label>
+                    <select name="role" id="dropdown" class="dropdown" required>
+                        <option value selected disabled>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time job</option>
+                        <option value="learn">Full Time learner</option>
+                        <option value="prefer">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-items">
+                    <p id="radio-p">Do you like programming?</p>
+                    <label><input type="radio" name="radio" class="radio-input" value="definitely" checked />Definitely</label>
+                    <label><input type="radio" name="radio" class="radio-input" value="maybe"/>Maybe</label>
+                    <label><input type="radio" name="radio" class="radio-input" value="notsure" />Not sure</label>
+                </div>
+                <div class="form-items">
+                    <p id="checkbox-p">What would you like to see improved? <span class="small-txt">(Check all that apply)</span></p>
+                    <label><input type="checkbox" class="checkbox-input" value="frontend" />Front-end Projects</label>
+                    <label><input type="checkbox" class="checkbox-input" value="backend" />Back-end Projects</label>
+                    <label><input type="checkbox" class="checkbox-input" value="datav" />Data Visualization</label>
+                    <label><input type="checkbox" class="checkbox-input" value="opensource" />Open Source Community</label>    
+                </div>
+                <div class="form-items">
+                    <p id="textarea-p">Any comments or suggestions?</p>
+                    <textarea name="comment" id="comment" placeholder="Enter Your comment here..."></textarea>
+                </div>
+                <div class="form-items">
+                    <button id="submit">SUBMIT</button>
+                </div>                         
+            </form>
+        </div>         
+      </div> 
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
